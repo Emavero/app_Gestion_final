@@ -1,6 +1,4 @@
 <?php
-
-
 include 'admin.php';
 require("auth.php");
 
@@ -12,10 +10,6 @@ $conn=mysqli_connect($host,$user,$password,$db_name);
 if(mysqli_connect_errno()){
     die("Failed to connect with MySQL:".mysqli_connect_error());
 }
-
-    
-    //include_once("connexion.php");
-
     if(Auth::isLogged()){
    
     }else{
@@ -24,13 +18,6 @@ if(mysqli_connect_errno()){
 
 include_once("process.php");
 include 'isAdmin.php'; 
-
-
-    
-    //include_once("connexion.php");
-
-   
-
 ?>
 
 
